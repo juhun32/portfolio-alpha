@@ -1,0 +1,86 @@
+header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1px 0;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  color: black;
+  backdrop-filter: blur(5px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 0 0 2em;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav__title {
+  font-size: 1.7em;
+  font-weight: 500;
+  margin: 10px 15px 0 15px;
+}
+
+.contact__links {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact__img {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+}
+
+/* Dark mode and inverted styles */
+.dark-mode {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.inverted {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.moon, .sun {
+  max-width: 30px;
+  max-height: 30px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.sun {
+  display: none; /* Hide sun icon by default */
+}
+
+.dark-mode .sun {
+  display: block; /* Show sun icon in dark mode */
+}
+
+.dark-mode .moon {
+  display: none; /* Hide moon icon in dark mode */
+}

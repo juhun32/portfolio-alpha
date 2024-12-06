@@ -31,7 +31,7 @@ html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-  background: rgb(185, 179, 171);
+  background: rgb(238, 219, 158);
   color: var(--clr-dark);
   margin: 0;
   font-family: var(--ff-primary);
@@ -86,10 +86,10 @@ header {
   justify-content: center;
   align-items: center;
   background-color: transparent;
-  box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
-    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
+  /* box-shadow: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
+    0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15); */
   color: black;
-  backdrop-filter: blur(5px);
+  /* backdrop-filter: blur(5px); */
 }
 
 nav {

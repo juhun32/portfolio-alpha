@@ -39,9 +39,9 @@ function App() {
       <header className={isDarkMode ? "header-dark-mode" : ""}>
       
         <nav>
-          <ul className="nav__title">{">>>"} Juhun Park</ul>
+          {/* <ul className="nav__title">{">>>"} Juhun Park</ul> */}
           <ul>
-            <li className="contact__link">
+            {/* <li className="contact__link">
               <a href="mailto:juhunpark32@email.com">
                 <img className="contact__img" src={email} alt="email" />
               </a>
@@ -55,7 +55,7 @@ function App() {
               <a href="https://github.com/juhun32">
                 <img className="contact__img" src={github} alt="github" />
               </a>
-            </li>
+            </li> */}
             <div className="button-container">
               <button className="header-button" onClick={toggleDarkMode}>
                 <img

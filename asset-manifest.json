@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/juhun-park/static/css/main.f855e6bc.css",
+    "main.js": "/juhun-park/static/js/main.6daf8215.js",
+    "static/js/453.8ab44547.chunk.js": "/juhun-park/static/js/453.8ab44547.chunk.js",
+    "static/media/logo.svg": "/juhun-park/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/juhun-park/index.html",
+    "main.f855e6bc.css.map": "/juhun-park/static/css/main.f855e6bc.css.map",
+    "main.6daf8215.js.map": "/juhun-park/static/js/main.6daf8215.js.map",
+    "453.8ab44547.chunk.js.map": "/juhun-park/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.6daf8215.js"
+  ]
+}

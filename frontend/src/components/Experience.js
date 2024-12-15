@@ -92,7 +92,7 @@ const Experience = () => {
 
   return (
     <section className="experience">
-      <div className="experience-header">
+      {/* <div className="experience-header">
         <h1>{">"} Experience / Activity</h1>
         <div className="experience-header-div"></div>
         <label className="label">
@@ -106,7 +106,7 @@ const Experience = () => {
             <div className="indicator"></div>
           </div>
         </label>
-      </div>
+      </div> */}
 
       <div className="experience-container">
         <div className="experience-list">

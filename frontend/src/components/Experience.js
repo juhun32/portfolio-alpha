@@ -92,22 +92,6 @@ const Experience = () => {
 
   return (
     <section className="experience">
-      {/* <div className="experience-header">
-        <h1>{">"} Experience / Activity</h1>
-        <div className="experience-header-div"></div>
-        <label className="label">
-          <div className="toggle">
-            <input
-              className="toggle-state"
-              type="checkbox"
-              checked={showDetails}
-              onChange={handleToggle}
-            />
-            <div className="indicator"></div>
-          </div>
-        </label>
-      </div> */}
-
       <div className="experience-container">
         <div className="experience-list">
           <div className="experience-content">
@@ -117,16 +101,7 @@ const Experience = () => {
                 <p className="job-title">Volunteer</p>
                 <p className="date">November 2024</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -134,16 +109,7 @@ const Experience = () => {
                 <p className="job-title">Participant</p>
                 <p className="date">October 2024</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -151,16 +117,7 @@ const Experience = () => {
                 <p className="job-title">Student</p>
                 <p className="date">May 2024 – August 2024</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -168,16 +125,7 @@ const Experience = () => {
                 <p className="job-title">English Instructor</p>
                 <p className="date">July 2024 – August 2024</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -185,17 +133,7 @@ const Experience = () => {
                 <p className="job-title">Apprentice</p>
                 <p className="date">January 2023 – April 2023</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -203,16 +141,7 @@ const Experience = () => {
                 <p className="job-title">Club President</p>
                 <p className="date">August 2020 – March 2022</p>
               </div>
-              <p>
-                <br className="br-height"></br>
-                <br className="br-height"></br>
-              </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-item">
               <div className="experience-grid">
@@ -238,11 +167,6 @@ const Experience = () => {
               </p>
             </div>
 
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
-
             <div className="experience-detail">
               <p className="event-title">PatriotHacks 2024</p>
               <p className="event-desc">
@@ -252,11 +176,6 @@ const Experience = () => {
                 incarceration, and solutions to reduce spending.
               </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-detail">
               <p className="event-title">
@@ -270,10 +189,6 @@ const Experience = () => {
               </p>
             </div>
 
-            <p>
-              <br className="br-height"></br>
-            </p>
-
             <div className="experience-detail">
               <p className="event-title">21Cen. English Academy</p>
               <p className="event-desc">
@@ -283,11 +198,6 @@ const Experience = () => {
                 students.
               </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-detail">
               <p className="event-title">
@@ -302,10 +212,6 @@ const Experience = () => {
               </p>
             </div>
 
-            <p>
-              <br className="br-height"></br>
-            </p>
-
             <div className="experience-detail">
               <p className="event-title">Software Developer Student Club</p>
               <p className="event-desc">
@@ -316,10 +222,6 @@ const Experience = () => {
                 members.
               </p>
             </div>
-
-            <p>
-              <br className="br-height"></br>
-            </p>
 
             <div className="experience-detail">
               <p className="event-title">

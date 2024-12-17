@@ -1,21 +1,23 @@
-import React, { useState } from "react";
-import email from "./img/email.png";
+import React, { useState, useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
+import "./App.css";
+
+// images
 import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
-// import resume from "./img/resume.png";
 import moon from "./img/moon.png";
 import sun from "./img/sun.png";
 import resume from "./resume.pdf";
+import intro4 from "./img/intro4.png";
 
-// import Footer from "./components/Footer";
-import Intro from "./components/Intro";
-// import About from "./components/About";
-// import Skills from "./components/Skills";
+// libraries
+import "aos/dist/aos.css";
+
+// components
+import Home from "./components/Home";
 import Experience from "./components/Experience";
-// import Education from "./components/Education";
 import Spotify from "./components/Spotify";
-
-import "./App.css";
 import Projects from "./components/Projects";
 
 function App() {
@@ -27,85 +29,62 @@ function App() {
     console.log("clicked");
   };
 
-  // page button
-  const [activePage, setActivePage] = useState("Page1");
-
-  const handleSlide = () => {
-    setActivePage((prev) => (prev === "Page1" ? "Page2" : "Page1"));
-  };
-
   return (
-    <div className="App">
-      <header className={isDarkMode ? "header-dark-mode" : ""}>
-      
-        <nav>
-          {/* <ul className="nav__title">{">>>"} Juhun Park</ul> */}
-          <ul>
-            {/* <li className="contact__link">
-              <a href="mailto:juhunpark32@email.com">
-                <img className="contact__img" src={email} alt="email" />
-              </a>
-            </li>
-            <li className="contact__link">
-              <a href="https://linkedin.com/in/juhun-park">
-                <img className="contact__img" src={linkedin} alt="linkedin" />
-              </a>
-            </li>
-            <li className="contact__link">
-              <a href="https://github.com/juhun32">
-                <img className="contact__img" src={github} alt="github" />
-              </a>
-            </li> */}
-            <div className="button-container">
-              <button className="header-button" onClick={toggleDarkMode}>
-                <img
-                  src={isDarkMode ? sun : moon}
-                  alt={isDarkMode ? "Sun" : "Moon"}
-                  className={isDarkMode ? "sun" : "moon"}
-                />
-              </button>
-            </div>
-          </ul>
-        </nav>
-      </header>
+    <Router>
+      <div className="App">
+        <header className={isDarkMode ? "header-dark-mode" : ""}>
+          <nav className="nav-contact">
+            <ul className="nav-title">
+              <img
+                className="nav-img"
+                src={intro4}
+                alt="Link picture of yourself"
+                class="nav-img"
+              />
+              <Link to="/">Juhun Park</Link>
+            </ul>
+            <ul>
+              <li className="nav-link">
+                <Link to="/experience">Experience</Link>
+              </li>
+              <li className="nav-link">
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li className="nav-link">
+                <Link to={resume} target="_blank" rel="noreferrer">
+                  Resume
+                </Link>
+              </li>
+              <li className="contact-link">
+                <Link to="https://linkedin.com/in/juhun-park">
+                  <img className="contact-img" src={linkedin} alt="linkedin" />
+                </Link>
+              </li>
+              <li className="contact-link">
+                <Link to="https://github.com/juhun32">
+                  <img className="contact-img" src={github} alt="github" />
+                </Link>
+              </li>
+              <li className="contact-link">
+                <button className="header-button" onClick={toggleDarkMode}>
+                  <img
+                    src={isDarkMode ? sun : moon}
+                    alt={isDarkMode ? "Sun" : "Moon"}
+                    className={isDarkMode ? "sun" : "moon"}
+                  />
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </header>
 
-      <Spotify/>
-
-      <div className={isDarkMode ? "dark-mode" : ""}>
-        <Intro />
-        <div className="slider-div">
-          <button className="slider-button" onClick={handleSlide}>
-            {activePage === "Page1" ? "View Resume" : "View Portfolio"}
-          </button>
-        </div>
-        <div className="page-display">
-          {activePage === "Page1" ? <Page1 /> : <Page2 />}
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
       </div>
-    </div>
-  );
-}
-
-function Page1() {
-  return (
-    <div className="page">
-      <Experience />
-      <Projects />
-    </div>
-  );
-}
-
-function Page2() {
-  return (
-    <div className="pdf">
-      <embed
-        src={resume}
-        title="PDF Viewer"
-        width="900"
-        height="1200"
-        style={{ border: "none", borderRadius: "20px" }}
-      ></embed>
-    </div>
+    </Router>
   );
 }
 

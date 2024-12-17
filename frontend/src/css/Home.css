@@ -1,0 +1,75 @@
+/* intro */
+
+.intro {
+  position: relative;
+  margin: 15em 0 0 0;
+  justify-items: center;
+  align-items: center;
+  padding: 0 15em;
+}
+
+.intro-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 7em;
+}
+
+.left-column {
+  grid-column: 1;
+  justify-items: start;
+}
+
+.right-column {
+  grid-column: 2;
+  grid-row: 1 / span 4;
+}
+
+.intro-main {
+  font-size: 4em;
+  font-weight: 500;
+  margin: 0 0;
+}
+
+.intro-sub {
+  font-size: 1.5em;
+  font-weight: 400;
+  margin: 0 0;
+}
+
+.intro-email {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  width: 80%;
+  justify-items: stretch;
+  align-items: center;
+  background-color: white;
+  border-radius: 50px;
+}
+
+.email {
+  color: gray;
+  padding: 1em;
+  margin-left: 1em;
+}
+
+.email-button {
+  text-align: center;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: rgb(75, 31, 31);
+  background-color: transparent;
+  border: rgb(75, 31, 31) 3px solid;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.intro-img {
+  margin: 0 0;
+  max-width: 500px;
+  z-index: 0;
+}
+
+.intro-img-text {
+  padding: 0.5em;
+}
+

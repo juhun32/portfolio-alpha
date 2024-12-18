@@ -4,15 +4,14 @@ import "../css/Projects.css";
 function Projects() {
   return (
     <section className="projects" id="projects">
-      <p className="project__title">{">"} Projects</p>
-      <div class="projects__container">
-        <div class="project">Project 1</div>
-        <div class="project">Project 2</div>
-        <div class="project">Project 3</div>
-        <div class="project">Project 4</div>
-        <div class="project">Project 5</div>
-        <div class="project">Project 6</div>
-        <div class="project">Project 7</div>
+      <p className="project-title">Projects</p>
+      <div className="projects-container">
+        <div className="project-item-container">
+          <div className="project-item">Project 1</div>
+          <div className="project-item">Project 2</div>
+          <div className="project-item">Project 3</div>
+          <div className="project-item">Project 4</div>
+        </div>
       </div>
     </section>
   );

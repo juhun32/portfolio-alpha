@@ -10,7 +10,7 @@ const Home = () => {
       <section className="intro">
         <div className="intro-grid">
           <div className="left-column intro-main">
-            DMV-based Software Engineer and "just a chill guy".
+            DMV-based ML/Software Engineer and "just a chill guy".
           </div>
           <div className="left-column intro-sub">
             Juhun is currently a student of George Mason University, studying
@@ -31,7 +31,7 @@ const Home = () => {
               class="intro-img"
             />
             <div className="right-column intro-img-text">
-              ^ this is my beautiful girlfriend's favorite picture of me
+              ^ ( this is my beautiful girlfriend's favorite picture of me )
             </div>
           </div>
         </div>

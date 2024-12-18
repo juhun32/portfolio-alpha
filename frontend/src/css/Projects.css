@@ -1,83 +1,32 @@
 .projects {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.75);
+  padding: 0 10em;
+}
+
+.project-title {
+  padding: 2em 0 0 0;
+}
+
+.projects-container {
+  background-color: rgba(0, 0, 0, 0.5);
   background-image: url("../img/laptop-background.png");
   background-size: cover;
   background-blend-mode: multiply;
   background-attachment: fixed;
-  color: var(--clr-light);
-  border-radius: 10%/20%;
+  border-radius: 50px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  box-shadow: inset 0px 30px 100px rgb(24, 24, 24);
-  margin: 0 5em;
+  margin: 2em;
 }
 
-.project__title {
-  font-size: var(--fs-h2);
-  font-weight: var(--fw-bold);
-  padding: 2em 0 0 0;
-}
-
-.project__div {
-  width: 700px;
-  height: 2px;
-  background-color: var(--clr-dark);
-  margin: auto;
-  border-radius: 20px;
-  margin-top: 5em;
-  margin-bottom: 5em;
-  background-color: transparent;
-  box-shadow: rgba(255, 255, 255, 0.07) 0px 1px 1px,
-    rgba(255, 255, 255, 0.07) 0px 2px 2px, rgba(255, 255, 255, 0.07) 0px 4px 4px,
-    rgba(255, 255, 255, 0.07) 0px 10px 10px,
-    rgba(255, 255, 255, 0.07) 0px 16px 16px;
-}
-
-.projects__container {
-  width: calc(100% - 15em);
+.project-item-container {
+  padding: 5em;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four columns layout */
-  gap: 0;
-  position: relative;
-  padding-bottom: 2em;
-  grid-auto-flow: column;
-  overflow-x: auto; /* Enable horizontal scrolling */
-  overflow-y: hidden;
-  white-space: nowrap; /* Prevent wrapping */
-  padding: 5em 5em; /* Add padding if needed */
-  scrollbar-width: none;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 
-.project {
-  width: 400px;
-  height: 400px;
-  padding: 2em;
-  font-weight: var(--fw-thin);
-  background-color: black;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
-  /* background: linear-gradient(135deg, #acacac, #414141); */
-  filter: blur(1.3px) opacity(0.7); /* Combined filter properties */
-}
-
-.project:hover {
-  transform: scale(1.1);
-  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.2); /* Glow effect */
-  filter: blur(0px) opacity(1); /* Remove blur and set opacity to 1 */
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 1em;
-  padding: 0.5em 1em;
+.project-item {
   color: white;
-  text-decoration: none;
-  border: 2px solid var(--clr-light);
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.project a:hover {
-  background-color: var(--clr-light);
-  color: black;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1em;
+  height: 300px;
 }

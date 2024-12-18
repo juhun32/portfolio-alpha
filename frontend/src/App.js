@@ -11,9 +11,6 @@ import sun from "./img/sun.png";
 import resume from "./resume.pdf";
 import intro4 from "./img/intro4.png";
 
-// libraries
-import "aos/dist/aos.css";
-
 // components
 import Home from "./components/Home";
 import Experience from "./components/Experience";

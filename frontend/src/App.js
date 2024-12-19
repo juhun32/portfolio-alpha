@@ -75,11 +75,19 @@ function App() {
           </nav>
         </header>
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/projects" element={<Projects />} />
-        </Routes>
+        <div className={isDarkMode ? "body-dark-mode" : ""}>
+          <Routes>
+            <Route path="/" element={<Home isDarkMode={isDarkMode} />} />
+            <Route
+              path="/experience"
+              element={<Experience isDarkMode={isDarkMode} />}
+            />
+            <Route
+              path="/projects"
+              element={<Projects isDarkMode={isDarkMode} />}
+            />
+          </Routes>
+        </div>
       </div>
     </Router>
   );

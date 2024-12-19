@@ -4,10 +4,10 @@ import "../css/Home.css";
 // images
 import home from "../img/home.png";
 
-const Home = () => {
+const Home = ({ isDarkMode }) => {
   return (
     <div>
-      <section className="intro">
+      <section className={isDarkMode ? "intro-dark-mode" : "intro"}>
         <div className="intro-grid">
           <div className="left-column intro-main">
             DMV-based ML/Software Engineer and "just a chill guy".

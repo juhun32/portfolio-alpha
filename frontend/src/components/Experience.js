@@ -6,9 +6,9 @@ import himedia from "../img/himedia.png";
 import english from "../img/english.png";
 import "../css/Experience.css";
 
-const Experience = () => {
+const Experience = ({ isDarkMode }) => {
   return (
-    <section className="experience">
+    <section className={isDarkMode ? "experience-dark-mode" : "experience"}>
       <div className="experience-title">
         Experience<div className="horizontal-line"></div>
       </div>

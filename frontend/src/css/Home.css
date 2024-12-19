@@ -2,10 +2,9 @@
 
 .intro {
   position: relative;
-  margin: 3em 0 0 0;
   justify-items: center;
   align-items: center;
-  padding: 0 15em;
+  padding: 3em 15em;
 }
 
 .intro-grid {
@@ -75,3 +74,27 @@
   color: rgb(95, 95, 95);
 }
 
+/* dark mode */
+.intro-dark-mode {
+  background-color: rgb(27, 27, 27);
+  color: white;
+  padding: 3em 15em;
+}
+
+.intro-dark-mode .intro-img-text {
+  color: rgb(151, 151, 151);
+}
+
+
+.intro-dark-mode .intro-email {
+  background-color: rgb(122, 122, 122);
+}
+
+.intro-dark-mode .email {
+  color: rgb(216, 216, 216);
+}
+
+.intro-dark-mode .email-button {
+  color: rgb(255, 241, 212);
+  border: rgb(255, 241, 212) 3px solid;
+}

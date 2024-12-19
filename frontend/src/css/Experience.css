@@ -1,5 +1,5 @@
 .experience {
-  padding: 0 10em;
+  padding: 1em 10em;
 }
 
 .experience-title {
@@ -91,4 +91,20 @@
   font-size: .8em;
   font-weight: 300;
   margin: 1em 0;
+}
+
+/* darkmode */
+.experience-dark-mode {
+  padding: 1em 10em;
+  margin: 0 0;
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.experience-dark-mode .horizontal-line {
+  background-color: white;
+}
+
+.experience-dark-mode .vertical-line {
+  background-color: white;
 }

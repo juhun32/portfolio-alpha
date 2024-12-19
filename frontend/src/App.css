@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 .nav-contact {
-  margin: 2em;
+  padding: 1em 5em;
 }
 
 .nav-title {
@@ -90,6 +90,7 @@ nav ul li a {
   padding: 3px;
   border: black 3px solid;
   border-radius: 100%;
+  background-color: rgb(221, 221, 221);
 }
 
 .contact-img {
@@ -111,34 +112,32 @@ nav ul li a {
   margin: 3px 0 0 30px;
 }
 
-/* Dark mode and inverted styles */
+/* Dark mode, header */
 
 .header-dark-mode {
-  .contact-img, .header-button, .nav-title a, .nav-link {
-    filter: invert(1) hue-rotate(180deg);
-  }
-  .nav-img {
-    background-color: rgb(221, 221, 221);;
-  }
-  background-color: rgb(26, 26, 26);
+  background-color: rgb(27, 27, 27);
+}
+
+.header-dark-mode .nav-contact {
+  background-color: rgb(27, 27, 27);
+}
+
+.header-dark-mode .nav-title a {
+  color: white;
+}
+
+.header-dark-mode nav ul li a {
+  color: white;
+}
+
+.header-dark-mode .contact-link {
+  filter: invert(1) hue-rotate(180deg);
 }
 
 .header-dark-mode .sun {
   display: block;
 }
 
-.header-dark-mode .moon {
+.header-light-mode .moon {
   display: none;
-}
-
-/* PDF viewer */
-
-.pdf {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: fit-content;
-  width: fit-content;
-  padding: 7em 0;
-  margin: auto;
 }

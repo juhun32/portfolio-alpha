@@ -1,16 +1,9 @@
-.horizontal-line {
-  width: 100%;
-  height: 2px;
-  background-color: #000000;
-  /* margin: 1em; */
-}
-
 .skills-container {
   padding: 3em 15em;
 }
 
 .skills-title {
-  font-size: 4em;
+  font-size: 3em;
   font-weight: 500;
   margin: 0 0;
 }

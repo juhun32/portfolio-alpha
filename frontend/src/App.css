@@ -116,6 +116,7 @@ nav ul li a {
 
 .header-dark-mode {
   background-color: rgb(27, 27, 27);
+  border: none;
 }
 
 .header-dark-mode .nav-contact {

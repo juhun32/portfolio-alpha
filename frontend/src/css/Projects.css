@@ -1,32 +1,115 @@
-.projects {
-  padding: 0 10em;
-}
 
 .project-title {
-  padding: 2em 0 0 0;
+  font-size: 16px;
+  padding: 1em 10em;
+  margin: 0 0;
+}
+
+.project-title p {
+  margin: 0 0;
+  padding: 0.5em;
+  font-size: 3em;
+  font-weight: 500;
 }
 
 .projects-container {
-  background-color: rgba(0, 0, 0, 0.5);
-  background-image: url("../img/laptop-background.png");
+  background-color: rgba(0, 0, 0, 0.8);
   background-size: cover;
   background-blend-mode: multiply;
   background-attachment: fixed;
-  border-radius: 50px;
-  border-bottom-left-radius: 0;
-  border-bottom-right-radius: 0;
-  margin: 2em;
+  padding: 3em;
+  margin: 0 0 5em 0;
+}
+
+.personal {
+  background-image: url("../img/laptop-background.png");
+}
+
+.hackathon {
+  background-image: url("../img/laptop-background2.png");
 }
 
 .project-item-container {
   padding: 5em;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
 }
 
 .project-item {
   color: white;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 1em;
+  width: 100%;
   height: 300px;
+  border-radius: 20px;
+}
+
+.project-item p{
+  margin: 0 0;
+}
+
+.project-item-img {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.project-item-img p {
+  margin: 0;
+  color: transparent;
+  padding: 1em;
+}
+
+.project-item-img:hover {
+  transform: scale(1.2);
+  background-color: rgba(0, 0, 0, 0.9);
+  background-blend-mode: multiply;
+}
+
+.project-item-img:hover p {
+  color: white;
+  transition: color .3s ease-in-out;
+}
+
+/* f1 */
+.f1 {
+  background-image: url("../img/f1.png");
+}
+
+/* jailbreak */
+.jailbreak {
+  background-image: url("../img/jail.png");
+}
+
+/* calculator */
+.calculator {
+  background-image: url("../img/iphone.png");
+}
+
+.project-item-title {
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0 0;
+}
+
+/* dark mode */
+.projects-dark-mode {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.projects-dark-mode .project-title {
+  padding: 1em 10em;
+  margin: 0 0;
+}
+
+.projects-dark-mode .horizontal-line {
+  background-color: white;
 }

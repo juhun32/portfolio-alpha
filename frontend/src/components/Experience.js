@@ -8,7 +8,7 @@ import "../css/Experience.css";
 
 const Experience = ({ isDarkMode }) => {
   return (
-    <section className={isDarkMode ? "experience-dark-mode" : "experience"}>
+    <div className={isDarkMode ? "experience-dark-mode" : "experience"}>
       <div className="experience-title">
         Experience<div className="horizontal-line"></div>
       </div>
@@ -177,7 +177,7 @@ const Experience = ({ isDarkMode }) => {
           <div className="vertical-line"></div>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -90,7 +90,7 @@ const Experience = ({ isDarkMode }) => {
           <div className="experience-jobtitle">
             <img src={gmu} alt="gmu logo" />
             <div>
-              <p className="job-title">Technical Volunteer</p>
+              <p className="job-title">Technical Support Volunteer</p>
               <p className="date">November 2024</p>
             </div>
           </div>

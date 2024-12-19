@@ -1,6 +1,8 @@
 import React from "react";
 import "../css/Home.css";
 
+import Skills from "../components/Skills";
+
 // images
 import home from "../img/home.png";
 
@@ -37,6 +39,9 @@ const Home = ({ isDarkMode }) => {
         </div>
       </section>
       {/* <div className="editor">vscode</div> */}
+      <div className="skills">
+        <Skills isDarkMode={isDarkMode}/>
+      </div>
     </div>
   );
 };

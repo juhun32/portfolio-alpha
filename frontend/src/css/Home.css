@@ -46,7 +46,7 @@
 }
 
 .email {
-  color: gray;
+  color: rgb(151, 151, 151);
   padding: 1em;
   margin-left: 1em;
 }
@@ -91,7 +91,7 @@
 }
 
 .intro-dark-mode .email {
-  color: rgb(216, 216, 216);
+  color: rgb(231, 231, 231);
 }
 
 .intro-dark-mode .email-button {

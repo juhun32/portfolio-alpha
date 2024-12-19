@@ -1,11 +1,32 @@
-h2 {
-  font-size: var(--fs-h2);
+.horizontal-line {
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  /* margin: 1em; */
 }
 
-ul {
-  list-style-type: "> ";
+.skills-container {
+  padding: 3em 15em;
 }
 
-.about__description {
-  font-size: var(--fs-body);
+.skills-title {
+  font-size: 4em;
+  font-weight: 500;
+  margin: 0 0;
+}
+
+.skills-list-item {
+  font-size: 1.3em;
+  font-weight: 300;
+  padding: .5em;
+  margin: 0 0;
+}
+
+.skills-dark-mode {
+  background-color: rgb(27, 27, 27);
+  color: white;
+}
+
+.skills-dark-mode .horizontal-line {
+  background-color: white;
 }

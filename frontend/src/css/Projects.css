@@ -18,7 +18,6 @@
   background-blend-mode: multiply;
   background-attachment: fixed;
   padding: 3em;
-  margin: 0 0 5em 0;
 }
 
 .personal {
@@ -58,7 +57,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+  transition: background-color .2s ease-in-out, transform .2s ease-in-out;
 }
 
 .project-item-img p {
@@ -75,7 +74,7 @@
 
 .project-item-img:hover p {
   color: white;
-  transition: color .3s ease-in-out;
+  transition: color .2s ease-in-out;
 }
 
 /* f1 */

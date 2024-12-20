@@ -63,6 +63,10 @@ nav ul li a {
   font-weight: 300;
 }
 
+nav ul li a:hover {
+  color: rgb(83, 83, 83);
+}
+
 .nav-contact {
   padding: 1em 5em;
 }
@@ -79,6 +83,10 @@ nav ul li a {
   color: black;
   margin-left: 0.7em;
   font-weight: 400;
+}
+
+.nav-title a:hover {
+  color: rgb(83, 83, 83);
 }
 
 .nav-img {
@@ -102,6 +110,10 @@ nav ul li a {
   padding: 0 0;
 }
 
+.contact-img:hover {
+  filter: contrast(0.5);
+}
+
 .moon,
 .sun {
   max-width: 30px;
@@ -110,6 +122,10 @@ nav ul li a {
   height: auto;
   display: block;
   margin: 3px 0 0 30px;
+}
+
+.moon:hover, .sun:hover {
+  filter: contrast(0.5);
 }
 
 /* Dark mode, header */

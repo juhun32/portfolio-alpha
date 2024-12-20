@@ -39,9 +39,9 @@ const Home = ({ isDarkMode }) => {
         </div>
       </section>
       {/* <div className="editor">vscode</div> */}
-      <div className="skills">
+      <section className="skills">
         <Skills isDarkMode={isDarkMode}/>
-      </div>
+      </section>
     </div>
   );
 };

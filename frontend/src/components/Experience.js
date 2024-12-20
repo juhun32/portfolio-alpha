@@ -28,8 +28,8 @@ const Experience = ({ isDarkMode }) => {
           <p className="event-title">21Cen. English Academy</p>
           <p className="event-desc">
             Provided one-on-one tutoring sessions to 14 high school students.
-            Developed customized 10 lesson plans by addressing the specific
-            needs and learning objectives of 14 individual students.
+            Developed 10 customized lesson plans by individually addressing each
+            student's specific needs and learning objectives.
           </p>
         </div>
 
@@ -48,11 +48,11 @@ const Experience = ({ isDarkMode }) => {
             Himedia Academy Backend Developer Apprenticeship
           </p>
           <p className="event-desc">
-            Backend development training course consisted of 10 participants.
-            Developed foundational skills in Java development, object-oriented
-            programming, data structures, and Oracle DBMS. Managed team projects
-            by utilizing Git and Notion to enhance collaboration and track
-            progress.
+            Intensive Backend development training course consisted of 10 chosen
+            participants. Developed foundational skills in Java development,
+            object-oriented programming, data structures, and Oracle DBMS.
+            Managed team projects by utilizing Git and Notion to enhance
+            collaboration and track progress.
           </p>
         </div>
 
@@ -71,8 +71,8 @@ const Experience = ({ isDarkMode }) => {
             Gimpo Highschool Science Research Program
           </p>
           <p className="event-desc">
-            Developed and tested a Python AI powered motion detection program
-            using MediaPipe model. Authored a scientific research paper griding
+            Developed and tested a Python AI-powered motion detection program
+            using MediaPipe model. Authored a scientific research paper publishing
             the project methodology, results, and implications.
           </p>
         </div>

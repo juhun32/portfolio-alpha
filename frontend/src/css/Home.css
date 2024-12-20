@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /* intro */
 
 .intro {
@@ -38,7 +42,7 @@
 .intro-email {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  width: 80%;
+  width: 100%;
   justify-items: stretch;
   align-items: center;
   background-color: white;
@@ -85,7 +89,6 @@
   color: rgb(151, 151, 151);
 }
 
-
 .intro-dark-mode .intro-email {
   background-color: rgb(122, 122, 122);
 }
@@ -97,4 +100,235 @@
 .intro-dark-mode .email-button {
   color: rgb(255, 241, 212);
   border: rgb(255, 241, 212) 3px solid;
+}
+
+/* responsive */
+@media (max-width: 1200px) {
+  .intro {
+    padding: 5em 10em;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .intro-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+    grid-template-columns: 1fr;
+    padding: 2em;
+  }
+
+  .intro-main {
+    font-size: 3.5em;
+  }
+
+  .intro-sub {
+    font-size: 1.3em;
+  }
+
+  .intro-email {
+    width: 100%;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .intro-img {
+    max-width: 400px;
+  }
+
+  .skills-container {
+    padding: 3em 3em;
+  }
+}
+
+@media (max-width: 800px) {
+  .intro {
+    padding: 0 0;
+  }
+
+  .intro-grid {
+    gap: 3em;
+  }
+
+  .intro-main {
+    font-size: 3em;
+  }
+
+  .intro-sub {
+    font-size: 1.2em;
+  }
+
+  .intro-email {
+    width: 100%;
+    margin-top: 2em;
+    border-radius: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .email-button {
+    padding: 0.5em;
+    margin: 0.5em 1em;
+    width: fit-content;
+    border-radius: 10px;
+    justify-self: right;
+  }
+
+  .intro-img {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+
+  .intro-img-text {
+    font-size: 1em;
+  }
+}
+
+.nav-hamburger {
+  display: none;
+}
+
+.menu-icon {
+  display: block;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.menu-icon .navicon {
+  background: black;
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: black;
+  content: "";
+  display: block;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+  transition: all 0.3s ease;
+}
+
+.menu-icon .navicon:before {
+  top: -7px;
+}
+
+.menu-icon .navicon:after {
+  top: 7px;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .menu-icon .navicon {
+  background: transparent;
+}
+
+#menu-toggle:checked + .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+#menu-toggle:checked + .menu-icon .navicon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  left: 50%;
+  background: white;
+  z-index: 100;
+  /* width: 90%; */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.menu-grid {
+  display: flex;
+  flex-direction: column;
+  gap: .5em;
+  justify-items: center;
+  padding: 1em;
+  background-color: rgb(231, 231, 231);
+  border-radius: 10px;
+}
+
+.ham-nav-link, .ham-contact-link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  margin: 0 0;
+  padding: 1em;
+}
+
+#menu-toggle:checked ~ .menu {
+  display: block;
+}
+
+#menu-toggle:checked html{
+  overflow: hidden;
+}
+
+.menu li {
+  padding: .5em;
+  text-align: center;
+  border-bottom: black 1px solid;
+}
+
+.menu li:last-child {
+  border-bottom: none;
+}
+
+.menu li a {
+  color: #333;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  color: #555;
+}
+
+/* Responsive styles */
+@media (max-width: 800px) {
+  .nav-contact .nav-link,
+  .contact-link {
+    display: none;
+  }
+
+  .nav-hamburger {
+    display: block;
+  }
+
+  .nav-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    justify-content: space-between;
+    padding: 2em;
+    width: 100%;
+  }
+
+  .nav-title {
+    margin: 0 0;
+  }
 }

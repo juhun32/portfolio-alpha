@@ -5,9 +5,7 @@ function Projects({ isDarkMode }) {
   return (
     <div className={isDarkMode ? "projects-dark-mode" : "projects"}>
       <div className="project-title">
-        <p>
-          Personal Projects<div className="horizontal-line"></div>
-        </p>
+        Personal Projects<div className="horizontal-line"></div>
       </div>
       <div className="projects-container personal">
         <div className="project-item-container">
@@ -36,9 +34,7 @@ function Projects({ isDarkMode }) {
         </div>
       </div>
       <div className="project-title">
-        <p>
-          Hackathon Projects<div className="horizontal-line"></div>
-        </p>
+        Hackathon Projects<div className="horizontal-line"></div>
       </div>
       <div className="projects-container hackathon">
         <div className="project-item-container">

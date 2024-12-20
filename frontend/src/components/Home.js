@@ -29,7 +29,7 @@ const Home = ({ isDarkMode }) => {
             <img
               className="intro-img"
               src={home}
-              alt="a picture of yourself"
+              alt="intro"
               class="intro-img"
             />
             <div className="right-column intro-img-text">

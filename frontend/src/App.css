@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,282;1,282&family=Oswald:wght@200..700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   background: rgb(221, 221, 221);
   font-family: "Oswald", sans-serif;
   scrollbar-width: none;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -17,9 +23,7 @@ img {
 header {
   /* position: fixed; */
   z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100%;
+  max-width: 100%;
   z-index: 1000;
   justify-content: center;
   align-items: center;
@@ -124,7 +128,8 @@ nav ul li a:hover {
   margin: 3px 0 0 30px;
 }
 
-.moon:hover, .sun:hover {
+.moon:hover,
+.sun:hover {
   filter: contrast(0.5);
 }
 
@@ -157,4 +162,78 @@ nav ul li a:hover {
 
 .header-light-mode .moon {
   display: none;
+}
+
+/* responsive  */
+
+@media (max-width: 1200px) {
+  nav {
+    padding: 0 3em;
+  }
+
+  .nav-title a {
+    font-size: 1.5em;
+  }
+
+  nav ul {
+    font-size: 1.1em;
+  }
+
+  .nav-img {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .moon,
+  .sun {
+    max-width: 25px;
+    max-height: 25px;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  nav {
+    padding: 0 2em;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  nav ul {
+    font-size: 1.2em;
+    justify-content: center;
+    margin-top: 1em;
+  }
+
+  .nav-img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  .nav-contact {
+    width: max-content;
+    align-content: center;
+    padding: 0 0;
+  }
+
+  .moon,
+  .sun {
+    max-width: 25px;
+    max-height: 25px;
+    margin: 0 0;
+  }
+
+  .nav-title a {
+    font-size: 1.4em;
+  }
+
+  .header-button {
+    margin: 0 0;
+  }
 }

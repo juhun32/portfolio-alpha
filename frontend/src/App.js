@@ -72,6 +72,50 @@ function App() {
                 </button>
               </li>
             </ul>
+            <nav className="nav-hamburger">
+              <input type="checkbox" id="menu-toggle" />
+              <label htmlFor="menu-toggle" className="menu-icon">
+                <span className="navicon"></span>
+              </label>
+              <ul className="menu">
+                <div className="menu-grid">
+                  <li className="ham-nav-link">
+                    <Link to="/experience">Experience</Link>
+                  </li>
+                  <li className="ham-nav-link">
+                    <Link to="/projects">Projects</Link>
+                  </li>
+                  <li className="ham-nav-link">
+                    <Link to={resume} target="_blank" rel="noreferrer">
+                      Resume
+                    </Link>
+                  </li>
+                  <li className="ham-contact-link">
+                    <Link to="https://linkedin.com/in/juhun-park">
+                      <img
+                        className="contact-img"
+                        src={linkedin}
+                        alt="linkedin"
+                      />
+                    </Link>
+                  </li>
+                  <li className="ham-contact-link">
+                    <Link to="https://github.com/juhun32">
+                      <img className="contact-img" src={github} alt="github" />
+                    </Link>
+                  </li>
+                  {/* <li className="ham-contact-link">
+                    <button className="header-button" onClick={toggleDarkMode}>
+                      <img
+                        src={isDarkMode ? sun : moon}
+                        alt={isDarkMode ? "Sun" : "Moon"}
+                        className={isDarkMode ? "sun" : "moon"}
+                      />
+                    </button>
+                  </li> */}
+                </div>
+              </ul>
+            </nav>
           </nav>
         </header>
 

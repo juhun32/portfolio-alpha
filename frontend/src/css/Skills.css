@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .skills-container {
   padding: 3em 15em;
 }
@@ -22,4 +26,24 @@
 
 .skills-dark-mode .horizontal-line {
   background-color: white;
+}
+
+@media (max-width: 800px) {
+
+  .skills {
+    max-width: 100%;
+    
+  }
+  .skills-container {
+    padding: 1em 3em;
+    max-width: 100%;
+  }
+
+  .skills-title {
+    font-size: 2em;
+  }
+
+  .skills-list-item {
+    font-size: 1em;
+  }
 }

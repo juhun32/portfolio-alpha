@@ -4,7 +4,6 @@
 
 .experience-title {
   font-size: 3em;
-  font-weight: 500;
   margin: 0 0;
   padding: .5em;
 }
@@ -107,4 +106,72 @@
 
 .experience-dark-mode .vertical-line {
   background-color: white;
+}
+
+/* Media queries */
+@media (max-width: 1200px) {
+  .experience {
+    padding: 1em 5em;
+  }
+
+  .experience-title {
+    font-size: 2em;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr 30px 2fr;
+    gap: 2em;
+    margin: 2em;
+  }
+
+  .experience-left-column,
+  .experience-right-column {
+    font-size: 1.1em;
+  }
+}
+
+@media (max-width: 800px) {
+  .experience {
+    padding: 1em 2em;
+  }
+
+  .experience-title {
+    font-size: 2em;
+  }
+
+  .experience-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .experience-left-column,
+  .experience-right-column {
+    text-align: center;
+    font-size: 1em;
+  }
+
+  .experience-jobtitle {
+    grid-template-areas:
+      "img"
+      "title"
+      "detail";
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+  }
+
+  .experience-grid img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience-middle-column {
+    display: none;
+  }
+
+  .vertical-line {
+    display: none;
+  }
 }

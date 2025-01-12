@@ -48,6 +48,7 @@
   display: grid;
   grid-template-columns: 3fr 1fr;
   width: 100%;
+  height: fit-content;
   justify-items: stretch;
   align-items: center;
   background-color: white;
@@ -111,15 +112,15 @@
 }
 
 /* responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .intro {
-    padding: 5em 10em !important;
+    padding: 5em 10em;
     max-width: 100%;
     overflow-x: hidden;
   }
 
   .intro-dark-mode {
-    padding: 5em 10em !important;
+    padding: 5em 10em;
   }
 
   .intro-grid {
@@ -154,7 +155,7 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
   .intro {
     padding: 0 0;
   }
@@ -164,18 +165,18 @@
   }
 
   .intro-main {
-    font-size: 3em;
+    font-size: 2em;
   }
 
   .intro-sub {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 
   .intro-email {
     width: 100%;
     margin-top: 2em;
     border-radius: 10px;
-    grid-template-columns: 1fr 1fr;
+    font-size: 0.8em;
   }
 
   .email-button {
@@ -187,12 +188,11 @@
   }
 
   .intro-img {
-    max-width: 100%;
-    border-radius: 10px;
+    max-width: 300px;
   }
 
   .intro-img-text {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 }
 
@@ -263,7 +263,7 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 10%;
+  top: 15%;
   right: 10%;
   left: 10%;
   background: white;
@@ -319,6 +319,20 @@
 
 .menu li a:hover {
   color: #555;
+}
+
+/* darkmode */
+
+.header-dark-mode .menu-icon {
+  filter: invert(1);
+}
+
+.header-dark-mode .menu-grid {
+  filter: invert(1);
+}
+
+.header-dark-mode .ham-nav-link a {
+  color: black;
 }
 
 /* Responsive styles */

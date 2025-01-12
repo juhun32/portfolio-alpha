@@ -1,10 +1,10 @@
 .projects-dark-mode {
-  height: max(100vh, 100%+1em);
-  padding: 3em min(10em, 10%);
+  height: max(100dvh, 100%);
+  padding: 1em 5em;
 }
 
 .projects {
-  padding: 3em min(10em, 10%);
+  padding: 1em 5em;
 }
 
 .project-title {
@@ -20,15 +20,15 @@
 }
 
 .projects-container {
-  margin: 1em max(2rem, 10%);
+  margin: 1em 1.5em;
   border: 2px solid black;
   border-radius: 20px;
 }
 
 .project-item-container {
   padding: 3em;
-  display: grid;
-  grid-template-columns: repeat(auto-fit);
+  display: flex;
+  flex-direction: column;
   gap: 3em;
 }
 
@@ -44,8 +44,8 @@
 }
 
 .project-item-img {
-  display: grid;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -58,21 +58,17 @@
   font-weight: 300;
 }
 
-.project-item-img:hover {
-  /* transform: scale(1.2); */
-  background-color: rgba(0, 0, 0, 0.7);
-  background-blend-mode: multiply;
-}
-
-.project-item-img:hover p {
-  color: white;
-  transition: color 0.1s ease-in-out;
+.project-item-img h3 {
+  padding-right: 1rem;
 }
 
 .project-item-title {
   font-size: 2em;
   font-weight: 400 !important;
   margin: 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 /* dark mode */
@@ -98,14 +94,13 @@
   color: white;
 }
 
+.projects-dark-mode .project-item-img img{
+  filter: invert(1);
+}
+
 @media (max-width: 1200px) {
   .project-item-container {
-    grid-template-columns: 1fr;
     padding: 2em;
-  }
-
-  .project-item {
-    height: 250px;
   }
 
   .project-item-img {
@@ -113,18 +108,22 @@
   }
 
   .project-title {
-    padding: .5em !important;
+    padding: .5em;
+    font-size: 2em;
   }
 }
 
 @media (max-width: 800px) {
-  .project-item-container {
-    grid-template-columns: 1fr;
-    padding: 1em;
+  .projects {
+    padding: 1em 2em;
   }
 
-  .project-item {
-    height: 200px;
+  .projects-container {
+    margin: 1em;
+  }
+
+  .project-item-container {
+    padding: 1em;
   }
 
   .project-item-img {
@@ -132,12 +131,16 @@
   }
 
   .project-item-img p {
-    font-size: 1em;
+    font-size: .8em;
     font-weight: 300;
   }
 
+  .project-item-img h3{
+    font-size: 1.3em;
+  }
+
   .project-title {
-    padding: 0.5em !important;
+    padding: 0.5em;
     font-size: 2em;
   }
 }

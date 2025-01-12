@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "./App.css";
@@ -8,13 +8,13 @@ import linkedin from "./img/linkedin.png";
 import github from "./img/github.png";
 import moon from "./img/moon.png";
 import sun from "./img/sun.png";
-import resume from "./resume.pdf";
+// import resume from "./resume.pdf";
 import intro4 from "./img/intro4.png";
 
 // components
 import Home from "./components/Home";
 import Experience from "./components/Experience";
-import Spotify from "./components/Spotify";
+// import Spotify from "./components/Spotify";
 import Projects from "./components/Projects";
 
 function App() {
@@ -35,7 +35,7 @@ function App() {
               <img
                 className="nav-img"
                 src={intro4}
-                alt="Link picture of yourself"
+                alt="my face"
                 class="nav-img"
               />
               <Link to="/">Juhun Park</Link>
@@ -48,7 +48,7 @@ function App() {
                 <Link to="/projects">Projects</Link>
               </li>
               <li className="nav-link">
-                <Link to={resume} target="_blank" rel="noreferrer">
+                <Link to="https://drive.google.com/file/d/1p-JG7XvSbC2CP2bl5LEyUpj6RYBT_DBR/view?usp=sharing">
                   Resume
                 </Link>
               </li>
@@ -86,7 +86,7 @@ function App() {
                     <Link to="/projects">Projects</Link>
                   </li>
                   <li className="ham-nav-link">
-                    <Link to={resume} target="_blank" rel="noreferrer">
+                    <Link to="https://drive.google.com/file/d/1p-JG7XvSbC2CP2bl5LEyUpj6RYBT_DBR/view?usp=sharing">
                       Resume
                     </Link>
                   </li>

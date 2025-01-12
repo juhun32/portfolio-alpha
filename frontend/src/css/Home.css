@@ -8,13 +8,18 @@
   position: relative;
   justify-items: center;
   align-items: center;
-  padding: 7em 15em;
+  padding: 5em 15em;
 }
 
 .intro-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto;
   gap: 7em;
+  border-left: 10px solid rgba(0, 0, 0, 0.8);
+  border-right: 10px solid rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  padding: 3em;
 }
 
 .left-column {
@@ -24,7 +29,7 @@
 
 .right-column {
   grid-column: 2;
-  grid-row: 1 / span 4;
+  grid-row: 1 / span 3;
 }
 
 .intro-main {
@@ -46,7 +51,7 @@
   justify-items: stretch;
   align-items: center;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .email {
@@ -62,7 +67,7 @@
   color: rgb(75, 31, 31);
   background-color: transparent;
   border: rgb(75, 31, 31) 3px solid;
-  border-radius: 50px;
+  border-radius: 10px;
   text-decoration: none;
 }
 
@@ -70,6 +75,7 @@
   margin: 0 0;
   max-width: 500px;
   z-index: 0;
+  border-radius: 10px;
 }
 
 .intro-img-text {
@@ -80,9 +86,11 @@
 
 /* dark mode */
 .intro-dark-mode {
+  position: relative;
   background-color: rgb(27, 27, 27);
   color: white;
-  padding: 7em 15em;
+  padding: 5em 15em;
+  justify-items: center;
 }
 
 .intro-dark-mode .intro-img-text {
@@ -105,9 +113,13 @@
 /* responsive */
 @media (max-width: 1200px) {
   .intro {
-    padding: 5em 10em;
+    padding: 5em 10em !important;
     max-width: 100%;
     overflow-x: hidden;
+  }
+
+  .intro-dark-mode {
+    padding: 5em 10em !important;
   }
 
   .intro-grid {
@@ -117,6 +129,7 @@
     gap: 4em;
     grid-template-columns: 1fr;
     padding: 2em;
+    border: none;
   }
 
   .intro-main {
@@ -250,9 +263,9 @@
   padding: 0;
   margin: 0;
   position: absolute;
-  top: 20%;
+  top: 10%;
   right: 10%;
-  left: 50%;
+  left: 10%;
   background: white;
   z-index: 100;
   /* width: 90%; */
@@ -263,14 +276,15 @@
 .menu-grid {
   display: flex;
   flex-direction: column;
-  gap: .5em;
+  gap: 0.5em;
   justify-items: center;
   padding: 1em;
   background-color: rgb(231, 231, 231);
   border-radius: 10px;
 }
 
-.ham-nav-link, .ham-contact-link {
+.ham-nav-link,
+.ham-contact-link {
   display: flex;
   justify-content: center;
   text-decoration: none;
@@ -284,12 +298,12 @@
   display: block;
 }
 
-#menu-toggle:checked html{
+#menu-toggle:checked html {
   overflow: hidden;
 }
 
 .menu li {
-  padding: .5em;
+  padding: 0.5em;
   text-align: center;
   border-bottom: black 1px solid;
 }

@@ -68,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgb(83, 83, 83);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-contact {
@@ -90,7 +90,14 @@ nav ul li a:hover {
 }
 
 .nav-title a:hover {
-  color: rgb(83, 83, 83);
+  color: rgba(0, 0, 0, 0.7);
+  border-bottom: white 2px solid;
+  border-top: transparent 2px solid;
+}
+
+.nav-link:hover {
+  border-bottom: white 2px solid;
+  border-top: transparent 2px solid;
 }
 
 .nav-img {

@@ -4,6 +4,7 @@ import gmu from "../img/gmu.png";
 import codepath from "../img/codepath.png";
 import himedia from "../img/himedia.png";
 import english from "../img/english.png";
+import insightlegi from "../img/insightlegi.png";
 import "../css/Experience.css";
 
 const Experience = ({ isDarkMode }) => {
@@ -14,6 +15,32 @@ const Experience = ({ isDarkMode }) => {
       </div>
 
       <div className="experience-grid">
+        <div className="experience-left-column experience-list">
+          <div className="experience-jobtitle">
+            <img src={insightlegi} alt="insightlegi logo" />
+            <div>
+              <p className="job-title">Backend Developer</p>
+              <p className="date">December 2024 – Present</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="experience-right-column experience-detail">
+          <p className="event-title">Eduverse</p>
+          <p className="event-desc">
+            Implemented an ML-based recommendation algorithm using Python and
+            Django suggesting user connections, personalized posts. Developed
+            search endpoint using Django ORM, PostgreSQL to query profiles and
+            posts with filters for names, skills, post types. Collaborated on
+            API testing, debugging using Postman and Git, ensuring profile
+            post-related functionality achieved 98% accuracy. Implemented
+            backend features, search features with seamless React integration
+            for frontend functionality, deployed using Firebase. Worked as a
+            team of 6 to develop and deploy scalable backend services, ensuring
+            high availability and performance.
+          </p>
+        </div>
+
         <div className="experience-left-column experience-list">
           <div className="experience-jobtitle">
             <img src={english} alt="english logo" />
@@ -72,8 +99,8 @@ const Experience = ({ isDarkMode }) => {
           </p>
           <p className="event-desc">
             Developed and tested a Python AI-powered motion detection program
-            using MediaPipe model. Authored a scientific research paper publishing
-            the project methodology, results, and implications.
+            using MediaPipe model. Authored a scientific research paper
+            publishing the project methodology, results, and implications.
           </p>
         </div>
 
@@ -86,6 +113,26 @@ const Experience = ({ isDarkMode }) => {
         Activities<div className="horizontal-line"></div>
       </div>
       <div className="experience-grid">
+        <div className="experience-left-column experience-list">
+          <div className="experience-jobtitle">
+            <img src={insightlegi} alt="insightlegi logo" />
+            <div>
+              <p className="job-title">Web Developer Volunteer</p>
+              <p className="date"> January 2025</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="experience-right-column experience-detail">
+          <p className="event-title">InsightLegi DataStorm ’25</p>
+          <p className="event-desc">
+            Developed a static website using React and Bootstrap to promote
+            Hackathon 2025, including event details and registration process.
+            Deployed the project on Firebase Hosting, enabling fast and scalable
+            access.
+          </p>
+        </div>
+
         <div className="experience-left-column experience-list">
           <div className="experience-jobtitle">
             <img src={gmu} alt="gmu logo" />
@@ -142,7 +189,7 @@ const Experience = ({ isDarkMode }) => {
 
         <div className="experience-right-column experience-detail">
           <p className="event-title">
-            CodePath Technical Interview Prep Course (TIP102 Intermediate Level)
+            CodePath Technical Interview Prep Course [TIP102 Intermediate]
           </p>
           <p className="event-desc">
             Improved problem-solving skills and understanding of data structures

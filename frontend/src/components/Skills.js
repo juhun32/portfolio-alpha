@@ -1,26 +1,28 @@
 import React from "react";
 import "../css/Skills.css";
 
-const Skills = ({isDarkMode}) => {
+const Skills = ({ isDarkMode }) => {
   return (
     <section className={isDarkMode ? "skills-dark-mode" : "skills"}>
       <div className="skills-container">
-        <div className="skills-title">Skills<div className="horizontal-line"></div></div>
+        <div className="skills-title">
+          Skills<div className="horizontal-line"></div>
+        </div>
         <ul className="skills-list">
           <li className="skills-list-item">
-            AI / ML, Data Science, Full-stack development
+            Full-stack Development, Web Development, Machine Learning, Data
+            Analysis, Database Management
           </li>
           <li className="skills-list-item">
-            Programming Languages : Python, Java, SQL, HTML, CSS, JavaScript
+            Programming Languages: Python, Java, SQL, HTML, CSS, JavaScript
           </li>
           <li className="skills-list-item">
-            Full-stack: Pandas, React, Flask, PostgreSQL
+            Frameworks: React.js, Flask, Bootstrap, Django, Pandas, Numpy,
+            PostgreSQL, MediaPipe
           </li>
-          {/* <li className="skills-list-item">TensorFlow, PyTorch</li> */}
-          <li className="skills-list-item">Data Visualization</li>
-          {/* <li className="skills-list-item">Cloud Computing</li> */}
           <li className="skills-list-item">
-            Git, Anaconda3, VS Code, LaTeX, Eclipse, MS Office
+            Technologies: Git, Linux, Docker, Firebase, GCP, Anaconda3, VS Code, LaTeX,
+            Eclipse, MS Office
           </li>
         </ul>
       </div>

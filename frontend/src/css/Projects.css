@@ -16,7 +16,6 @@
 .project-title p {
   margin: 0 0;
   padding: 0.5em;
-  font-size: 3em;
   font-weight: 500;
 }
 
@@ -56,6 +55,7 @@
 
 .project-item-img p {
   margin: 0;
+  font-weight: 300;
 }
 
 .project-item-img:hover {
@@ -71,7 +71,7 @@
 
 .project-item-title {
   font-size: 2em;
-  font-weight: 500;
+  font-weight: 400 !important;
   margin: 0 0;
 }
 

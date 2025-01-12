@@ -37,7 +37,7 @@ function Projects({ isDarkMode }) {
           </div>
           <div className="project-item">
             <div className="project-item-img calculator">
-              <p className="project-item-title">IOS calculator clone</p>
+              <p className="project-item-title">iOS calculator clone</p>
               <a href="https://github.com/juhun32/ios-calculator">github</a>
               <p>
                 IOS calculator clone is a web application, designed to mimic the

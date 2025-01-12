@@ -1,10 +1,10 @@
 .projects-dark-mode {
   height: max(100dvh, 100%);
-  padding: 1em 5em;
+  padding: 3em 10em;
 }
 
 .projects {
-  padding: 1em 5em;
+  padding: 3em 10em;
 }
 
 .project-title {
@@ -99,6 +99,14 @@
 }
 
 @media (max-width: 1200px) {
+  .projects {
+    padding: 1em 5em;
+  }
+
+  .projects-container {
+    margin: 1em;
+  }
+
   .project-item-container {
     padding: 2em;
   }
@@ -115,6 +123,10 @@
 
 @media (max-width: 800px) {
   .projects {
+    padding: 1em 2em;
+  }
+
+  .projects-dark-mode {
     padding: 1em 2em;
   }
 

@@ -104,7 +104,7 @@ function App() {
                       <img className="contact-img" src={github} alt="github" />
                     </Link>
                   </li>
-                  {/* <li className="ham-contact-link">
+                  <li className="ham-contact-link">
                     <button className="header-button" onClick={toggleDarkMode}>
                       <img
                         src={isDarkMode ? sun : moon}
@@ -112,7 +112,7 @@ function App() {
                         className={isDarkMode ? "sun" : "moon"}
                       />
                     </button>
-                  </li> */}
+                  </li>
                 </div>
               </ul>
             </nav>

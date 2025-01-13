@@ -54,9 +54,11 @@ const Experience = ({ isDarkMode }) => {
         <div className="experience-right-column experience-detail">
           <p className="event-title">21Cen. English Academy</p>
           <p className="event-desc">
-            Provided one-on-one tutoring sessions to 14 high school students.
-            Developed 10 customized lesson plans by individually addressing each
-            student's specific needs and learning objectives.
+            Improved 14 high school students’ grades by average 30%,
+            significantly improved understanding of English concepts and
+            structures. Saved 20% of class time by developing 10 custom lesson
+            plans, addressing the specific needs and objectives of all 14
+            students.
           </p>
         </div>
 
@@ -64,7 +66,7 @@ const Experience = ({ isDarkMode }) => {
           <div className="experience-jobtitle">
             <img src={himedia} alt="himedia logo" />
             <div>
-              <p className="job-title">Apprentice Backend Developer</p>
+              <p className="job-title">Full-stack Developer Apprentice</p>
               <p className="date">January 2023 – April 2023</p>
             </div>
           </div>
@@ -75,11 +77,12 @@ const Experience = ({ isDarkMode }) => {
             Himedia Academy Backend Developer Apprenticeship
           </p>
           <p className="event-desc">
-            Intensive Backend development training course consisted of 10 chosen
-            participants. Developed foundational skills in Java development,
-            object-oriented programming, data structures, and Oracle DBMS.
-            Managed team projects by utilizing Git and Notion to enhance
-            collaboration and track progress.
+            Developed skills in web development techniques and REST API using
+            Bootstrap, HTML/CSS, JavaScript, and Oracle DBMS. Focused on backend
+            development skills; object-oriented programming, data structures and
+            algorithms, unit testing, and debugging. Led a team of 4 and
+            improved workflow efficiency by reducing 30% of development time by
+            utilizing Git, Github and Notion.
           </p>
         </div>
 
@@ -98,9 +101,10 @@ const Experience = ({ isDarkMode }) => {
             Gimpo Highschool Science Research Program
           </p>
           <p className="event-desc">
-            Developed and tested a Python AI-powered motion detection program
-            using MediaPipe model. Authored a scientific research paper
-            publishing the project methodology, results, and implications.
+            Led a research project, developed and tested a motion detection
+            application using Numpy, OpenCV, PyAutoGUI and MediaPipe. Authored a
+            scientific research paper detailing the project methodology, test
+            results, and implications for future research plans.
           </p>
         </div>
 
@@ -192,9 +196,10 @@ const Experience = ({ isDarkMode }) => {
             CodePath Technical Interview Prep Course [TIP102 Intermediate]
           </p>
           <p className="event-desc">
-            Improved problem-solving skills and understanding of data structures
-            and algorithms. Enhanced soft skills in communication and analytical
-            thinking by collaborating with 5 team members.
+            Improved problem-solving skills of data structures and algorithms of
+            heaps, trees, linked lists, and hashmap through 60+ problems.
+            Enhanced communication and analytical thinking skills by
+            collaborating with 5 team members from various cultural backgrounds.
           </p>
         </div>
 
@@ -213,10 +218,12 @@ const Experience = ({ isDarkMode }) => {
             Gimpo Highschool Software Developer Student Club
           </p>
           <p className="event-desc">
-            Managed 36 club members ensuring smooth progress of their personal
-            projects. Organized two successful project demonstration event for 5
-            club members. Invited a published author in artificial intelligence
-            for a Q&A session with club members.
+            Led 40 club members, supported their projects and academic success,
+            recieved 100% positive feedback from members and mentors. Organized
+            two successful project demonstration event, coordinated logistics,
+            presentations, and attendee engagement. Invited a published author
+            in AI for a Q&A, facilitated understanding of AI concepts and
+            inspired a new AI application project
           </p>
         </div>
 
